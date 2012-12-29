@@ -1,4 +1,4 @@
-autocmd BufNewFile,BufRead .slate
+autocmd BufNewFile,BufRead *.slate
       \ if &ft =~# '^\%(conf\)$' |
       \   set ft=slate |
       \ else |
