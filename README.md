@@ -1,4 +1,4 @@
 vim-slate
 =========
 
-syntax file for slate configuration files
+[Slate](https://github.com/jigish/slate) syntax files for vim
