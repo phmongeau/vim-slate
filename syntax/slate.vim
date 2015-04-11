@@ -141,6 +141,10 @@ syn match slateDirective /\m^default/
 syn match slateDirective /\m^bind/
 syn match slateDirective /\m^source/
 
+syn match slateComment "^\s*\zs#.*$"
+syn match slateComment "\s\zs#.*$"
+syn match slateQuickComment contained	"#.*$"
+
 hi link slateDirective Keyword
 hi link slateOperation Keyword
 hi link slateVariable Constant
@@ -151,4 +155,6 @@ hi link slateBool Boolean
 hi link slateAlias Identifier
 hi link slateSpecial Special
 hi link slateStyle Special
+hi link slateQuickComment slateComment
+hi link slateComment Comment
 
